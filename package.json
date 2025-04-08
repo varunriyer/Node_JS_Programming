@@ -1,0 +1,23 @@
+{
+  "name": "node_js_programming-1",
+  "version": "1.0.0",
+  "description": "��N\u0000e\u0000w\u0000 \u0000R\u0000e\u0000p\u0000o\u0000 \u0000f\u0000o\u0000r\u0000 \u0000N\u0000o\u0000d\u0000e\u0000 \u0000J\u0000S\u0000 \u0000P\u0000r\u0000o\u0000g\u0000r\u0000a\u0000m\u0000m\u0000i\u0000n\u0000g\u0000 \u0000P\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000e\u0000\r\u0000 \u0000",
+  "main": "append_file_test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunriyer/Node_JS_Programming.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/varunriyer/Node_JS_Programming/issues"
+  },
+  "homepage": "https://github.com/varunriyer/Node_JS_Programming#readme",
+  "dependencies": {
+    "upper-case": "^2.0.2"
+  }
+}
