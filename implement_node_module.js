@@ -1,5 +1,5 @@
-var http = require('http');
-var dt = require('./node_module_practice');
+let http = require('http');
+let dt = require('./node_module_practice');
 
 http.createServer(function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
