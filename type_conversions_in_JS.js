@@ -36,3 +36,10 @@ console.log(String(true));
 console.log(String(false));
 console.log(false.toString());
 console.log(true.toString());
+
+//Automatic Type Conversion 
+console.log(5 + null);
+console.log("5" + null);
+console.log("5" + 2);
+console.log("5" - 2);
+console.log("5" * "2");
