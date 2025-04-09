@@ -31,8 +31,10 @@ class BankAccount {
             console.log(`${amount}!? Bro you are either broke or money cannot be negative haha`);
         }
     }
-    display_balance = () => console.log(`Your current balance is = ${this.#balance}`);
-};
+    display_balance = () => {
+        return this.#balance;
+    };
+}
 const acc1 = new BankAccount("Gunna", 101, "Savings", 300000);
 acc1.display_details();
 acc1.deposit_money(20000);
@@ -40,4 +42,16 @@ acc1.deposit_money(-9292929);
 acc1.withdraw_money(10000000);
 acc1.withdraw_money(43210);
 acc1.withdraw_money(-32);
-acc1.display_balance();
+console.log(acc1.display_balance());
+
+class SavingsAccount extends BankAccount {
+    #interestRate = 0.02;
+
+    addInterest() {
+        const interest = this.display_balance() * this.#interestRate;
+        this.deposit_money(interest);
+    }
+}
+const new_acc = new SavingsAccount("Somesh", 102, "Savings", 2000);
+new_acc.addInterest();
+console.log(new_acc.display_balance());
