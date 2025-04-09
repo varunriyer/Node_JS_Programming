@@ -13,3 +13,19 @@
     let x = +y;
     console.log(x);
 }
+{
+    let num = 7;
+    console.log(String(num));
+    console.log(String(123));
+    console.log(String(100 + 23));
+    console.log(num.toString());
+    console.log((123).toString());
+    console.log((100 + 123).toString());
+}
+{
+    let d = new Date();
+    console.log(d);
+    console.log(Number(d));
+    console.log(typeof (Date()));
+    console.log(typeof (Date().toString()));
+}
