@@ -15,3 +15,7 @@ if (1) {
         console.log("This will print if we are in sad times :(");
     }
 }
+{
+    let age = 19;
+    (age > 18) ? console.log("Entry allowed") : console.log("Entry Denied");
+}
