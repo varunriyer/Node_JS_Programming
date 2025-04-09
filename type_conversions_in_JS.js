@@ -7,5 +7,9 @@
     console.log(Number("Zero"));
     console.log(Number("99 98"));
     console.log(Number("Hello"));
-
+}
+{
+    let y = "John";
+    let x = +y;
+    console.log(x);
 }
