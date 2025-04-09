@@ -62,3 +62,16 @@ super() function before assigning it's own properties or it gives an error.
 what to choose from a parent class
 - Children classes can override their parent's properties and methods
 */
+
+//Creating a class to show children classes can override parent properties
+class OverrideAlien extends Enemy {
+    constructor(name, phrase, power, speed) {
+        super(name, phrase, power, speed)
+        this.species = "alien"
+    }
+    fly = () => console.log("Zzzzzziiiiiinnnnnggggg!!")
+    attack = () => console.log("Now I'm doing a different thing, HA!") // Override the parent method.
+}
+
+const alien3 = new OverrideAlien("Jamal", "I'm Jamal the alien!", 10, 50)
+alien3.attack() // output: "Now I'm doing a different thing, HA!"
