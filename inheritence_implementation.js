@@ -57,4 +57,8 @@ robot1.attack();
 - A class can only have one parent class to inherit from. You can't extend from multiple classes directly.
 - The inheritence chain can be extended as much as you want. 
 - When a child class inherits any properties from a parent class, it must first assign the parent propeties calling the 
-super() function before assigning it's own properties or it gives an error. */ 
+super() function before assigning it's own properties or it gives an error. 
+- When inheriting, all parent methods and properties are inherited by the children and we can;t decide specifically
+what to choose from a parent class
+- Children classes can override their parent's properties and methods
+*/
