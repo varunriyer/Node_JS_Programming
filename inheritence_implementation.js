@@ -65,13 +65,18 @@ what to choose from a parent class
 
 //Creating a class to show children classes can override parent properties
 class OverrideAlien extends Enemy {
-    constructor(name, phrase, power, speed) {
+
+    #birthYear //# is used to declare private properties. Default in JS everything is public.    
+
+    constructor(name, phrase, power, speed, birthYear) {
         super(name, phrase, power, speed)
-        this.species = "alien"
+        this.species = "alien";
+        this.#birthYear = birthYear;
     }
     fly = () => console.log("Zzzzzziiiiiinnnnnggggg!!")
     attack = () => console.log("Now I'm doing a different thing, HA!") // Override the parent method.
+    howOld = () => console.log(`I was born in ${this.#birthYear} `);
 }
 
-const alien3 = new OverrideAlien("Jamal", "I'm Jamal the alien!", 10, 50)
+const alien3 = new OverrideAlien("Jamal", "I'm Jamal the alien!", 10, 50, 10000)
 alien3.attack() // output: "Now I'm doing a different thing, HA!"
