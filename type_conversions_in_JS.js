@@ -37,7 +37,7 @@ console.log(String(false));
 console.log(false.toString());
 console.log(true.toString());
 
-//Automatic Type Conversion 
+//Automatic Type Conversion (Implicit - Coersion)
 console.log(5 + null);
 console.log("5" + null);
 console.log("5" + 2);
