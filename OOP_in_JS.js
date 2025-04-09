@@ -40,3 +40,6 @@ console.log(bug2.species);
 Robot1.sayPhrase();
 Robot2.transform();
 console.log(bug1);
+
+//The issue with writing code like this is that it is difficult to scale and it's prone to errors.
+// This is where using classes makes it easier and we will see the same in a new file
