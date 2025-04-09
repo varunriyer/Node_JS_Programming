@@ -29,3 +29,10 @@
     console.log(typeof (Date()));
     console.log(typeof (Date().toString()));
 }
+
+console.log(Number(false));
+console.log(Number(true));
+console.log(String(true));
+console.log(String(false));
+console.log(false.toString());
+console.log(true.toString());
