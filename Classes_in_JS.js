@@ -35,3 +35,9 @@ const bug1 = new Bug("Buggy", "Your debugger doesn't work with me:)");
 const bug2 = new Bug("Erik", "I drink decaf");
 const robot1 = new Robot("Tito", "I can cook, swim and dance!");
 const robot2 = new Robot("Ibot", "I am actually just Tobi");
+
+
+console.log(alien1.name);
+console.log(bug2.species);
+robot2.sayPhrase();
+robot1.transform()
