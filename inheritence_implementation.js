@@ -80,3 +80,5 @@ class OverrideAlien extends Enemy {
 
 const alien3 = new OverrideAlien("Jamal", "I'm Jamal the alien!", 10, 50, 10000)
 alien3.attack() // output: "Now I'm doing a different thing, HA!"
+alien3.howOld() // we can access the howOld method as it is not private
+// console.log(alien3.#birthYear);  This will give an error as we are trying to access a private property directly
