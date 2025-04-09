@@ -28,3 +28,10 @@ class Robot {
     sayPhrase = () => console.log(this.phrase);
 };
 
+
+const alien1 = new Alien("Ali", "I'm Ali the Alien!");
+const alien2 = new Alien("Lien", "Run for your lives!");
+const bug1 = new Bug("Buggy", "Your debugger doesn't work with me:)");
+const bug2 = new Bug("Erik", "I drink decaf");
+const robot1 = new Robot("Tito", "I can cook, swim and dance!");
+const robot2 = new Robot("Ibot", "I am actually just Tobi");
