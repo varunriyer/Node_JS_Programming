@@ -52,3 +52,9 @@ const robot2 = new Robot("Terminator", "Hasta la vista, baby!", 155, 40)
 
 alien1.move();
 robot1.attack();
+
+/* Remember the below in JavaScript Inheritence 
+- A class can only have one parent class to inherit from. You can't extend from multiple classes directly.
+- The inheritence chain can be extended as much as you want. 
+- When a child class inherits any properties from a parent class, it must first assign the parent propeties calling the 
+super() function before assigning it's own properties or it gives an error. */ 
