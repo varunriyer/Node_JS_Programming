@@ -39,3 +39,4 @@ console.log(alien1.name);
 console.log(bug2.species);
 Robot1.sayPhrase();
 Robot2.transform();
+console.log(bug1);
