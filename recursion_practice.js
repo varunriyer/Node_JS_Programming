@@ -20,3 +20,12 @@
     console.log(factorial(999)); //This gives infinity
     // console.log(factorial(9654)); --> Numbers above this give error
 }
+//Practice Questions 
+//Q1) Sum of natiral numbers upto n
+{
+    function sum(n) {
+        if (n == 0) return 0;
+        return n + sum(n - 1);
+    }
+    console.log(sum(5));
+}
