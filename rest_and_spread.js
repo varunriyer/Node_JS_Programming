@@ -111,3 +111,13 @@
     const arr = ["Varun", 22, "Bangalore"];
     greet(...arr);
 }
+{
+    const settings = {
+        volume: 70,
+        brightness: 50,
+        theme: "dark",
+        notifications: true
+    };
+    const { theme, ...rem_attributes } = settings
+    console.log(rem_attributes);
+}
