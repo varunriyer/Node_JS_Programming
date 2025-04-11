@@ -103,3 +103,11 @@
     console.log(user.hobbies); //returns [ 'coding', 'basketball' ]
     console.log(deepClone.hobbies); //reterns [ 'coding', 'basketball', 'music' ]
 }
+{
+    //Spread in Function Calls
+    function greet(name, age, city) {
+        console.log(`Hi ${name}, ${age}, from ${city}`);
+    }
+    const arr = ["Varun", 22, "Bangalore"];
+    greet(...arr);
+}
