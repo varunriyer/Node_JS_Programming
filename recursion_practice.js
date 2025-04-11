@@ -222,6 +222,24 @@
         return curr;
     }
 
-    console.log(fibOptimized(10)); // ➤ 55
+    console.log(fibOptimized(10));
+}
 
+//Print the first N fibonacci numbers
+{
+    console.log("Printing First N Fibonacci Numbers:");
+    function fibOptimizedPrint(n) {
+        if (n <= 0) return;
+
+        let prev = 0, curr = 1;
+
+        for (let i = 0; i < n; i++) {
+            console.log(prev);
+            let next = prev + curr;
+            prev = curr;
+            curr = next;
+        }
+    }
+
+    fibOptimizedPrint(7);
 }
