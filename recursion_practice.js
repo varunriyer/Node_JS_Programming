@@ -120,3 +120,14 @@
     pushtostack(5);
     popStack();
 }
+
+//Reverse array using stack approach
+{
+    console.log("Reversing an array:");
+    function reverseArray(arr) {
+        if (arr.length === 0) return;
+        console.log(arr.pop());
+        reverseArray(arr);
+    }
+    reverseArray([1, 2, 3]);
+}
