@@ -16,4 +16,9 @@
     const arr1 = [1, 2, 3];
     const arr2 = [...arr1]; // shallow copy using spread operator
     console.log(arr2);
+    const arr3 = [...arr1, ...arr2]; //merging 2 arrays using spread operator
+    console.log(arr3);
+    const obj = { name: "Varun", age: 23 };
+    const clone_obj = { ...obj }; //Spread operator with objects for cloning
+    console.log(clone_obj);
 }
