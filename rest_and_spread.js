@@ -82,3 +82,13 @@
     const { password, ...safeUser } = user;
     console.log(safeUser);
 }
+{
+    //Spread works for only shallow copy and not deep copy 
+    const user = {
+        name: "Varun",
+        hobbies: ["coding", "basketball"]
+    };
+    const clone = { ...user };
+    clone.hobbies.push("music");
+    console.log(user.hobbies); //returns [ 'coding', 'basketball', 'music' ] 
+}
