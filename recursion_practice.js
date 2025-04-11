@@ -143,3 +143,18 @@
     reverseArray([1, 2, 3]);  // Output: 3 2 1
 
 }
+// Trace Factorial
+{
+    console.log("Trace Fatorial:");
+    function traceFactorial(n) {
+        if (n === 0) {
+            console.log(`Entering traceFactorial(0) `);
+            return 1;
+        }
+        console.log(`Entering traceFactorial(${n})`);
+        let result = n * traceFactorial(n - 1);
+        console.log(`Exiting traceFactorial(${n}): ${result}`);
+        return result;
+    }
+    traceFactorial(3);
+}
