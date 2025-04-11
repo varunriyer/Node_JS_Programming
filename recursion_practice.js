@@ -131,3 +131,15 @@
     }
     reverseArray([1, 2, 3]);
 }
+//Solved the above problem without modifying the original array 
+{
+    console.log("Reversing an array:");
+    function reverseArray(arr, index = arr.length - 1) {
+        if (index < 0) return;
+        console.log(arr[index]);
+        reverseArray(arr, index - 1);
+    }
+
+    reverseArray([1, 2, 3]);  // Output: 3 2 1
+
+}
