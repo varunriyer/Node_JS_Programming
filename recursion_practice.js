@@ -84,3 +84,11 @@
     }
     console.log(fibonacci(7));
 }
+{
+    function print_fibonacci(n, a = 0, b = 1) {
+        if (n <= 0) return;
+        console.log(a);
+        print_fibonacci(n - 1, b, a + b);
+    }
+    print_fibonacci(6);
+}
