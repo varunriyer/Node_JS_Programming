@@ -65,3 +65,11 @@
     }
     factorial(5);
 }
+
+//Code to test stack overflow
+{
+    function infinite() {
+        return infinite()
+    }
+    infinite()
+}
