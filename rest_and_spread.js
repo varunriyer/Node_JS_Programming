@@ -52,3 +52,9 @@
     const [a, b, ...rest] = arr;
     console.log(a, b, rest);
 }
+{
+    const obj = { brand: 'Tesla', wheels: 4 };
+    const obj_copy = { ...obj };
+    obj_copy.brand = 'BMW';
+    console.log(obj, obj_copy);
+}
