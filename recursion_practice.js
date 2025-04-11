@@ -173,3 +173,23 @@
     }
     tailSum(5);
 }
+
+// Simulate factorial using stack 
+{
+    function factorialUsingStack(n) {
+        if (n < 0) throw new Error("Negative numbers not allowed");
+
+        let stack = [];
+        let result = 1;
+
+        while (n > 0) {
+            stack.push(n);
+            n--;
+        }
+        while (stack.length > 0) {
+            result *= stack.pop();
+        }
+        console.log(result);
+    }
+    factorialUsingStack(5);
+}
