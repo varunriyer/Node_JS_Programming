@@ -58,3 +58,8 @@
     obj_copy.brand = 'BMW';
     console.log(obj, obj_copy);
 }
+{
+    const defaults = { theme: 'light', notification: true };
+    const userSettings = { notification: false, fontsize: 'Medium' };
+    console.log({ ...defaults, ...userSettings });
+}
