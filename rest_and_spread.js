@@ -134,3 +134,33 @@
     };
     console.log({ ...defaultSettings, ...userSettings });
 }
+{
+    console.log("Mini Project:");
+    function createUserSettings(defaults, userPrefs, ...extraPrefs) {
+        let merged_extras = {};
+        for (let extra of extraPrefs) {
+            merged_extras = { ...merged_extras, ...extra };
+        }
+        return ({ ...defaults, ...userPrefs, ...merged_extras });
+    }
+    const defaultSettings = {
+        theme: "light",
+        notifications: true,
+        autoSave: false
+    };
+
+    const userPrefs = {
+        notifications: false,
+        fontSize: "medium"
+    };
+
+    const extra1 = {
+        autoSave: true
+    };
+
+    const extra2 = {
+        theme: "dark",
+        layout: "grid"
+    };
+    console.log(createUserSettings(defaultSettings, userPrefs, extra1, extra2));
+}
