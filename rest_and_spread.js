@@ -25,3 +25,10 @@
     const obj2 = { b: 2 };
     console.log({ ...obj1, ...obj2 }); // Merging objects using spread
 }
+{
+    // Use Spread operator to merge 2 arrays 
+    function mergeArrays(arr1, arr2) {
+        return ([...arr1, ...arr2]);
+    }
+    console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
+}
