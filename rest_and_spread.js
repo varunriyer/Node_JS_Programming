@@ -21,4 +21,7 @@
     const obj = { name: "Varun", age: 23 };
     const clone_obj = { ...obj }; //Spread operator with objects for cloning
     console.log(clone_obj);
+    const obj1 = { a: 1 };
+    const obj2 = { b: 2 };
+    console.log({ ...obj1, ...obj2 }); // Merging objects using spread
 }
