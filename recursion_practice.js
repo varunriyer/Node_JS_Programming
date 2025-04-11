@@ -40,3 +40,12 @@
     }
     print_str("Hello");
 }
+
+// Q3) Reverse a string using recursion
+{
+    function reverseStr(str) {
+        if (str.length <= 1) return str;
+        return reverseStr(str.slice(1)) + str[0];
+    }
+    console.log(reverseStr("abc"));
+}
