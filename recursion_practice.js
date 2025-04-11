@@ -67,9 +67,20 @@
 }
 
 //Code to test stack overflow
+// {
+//     function infinite() {
+//         return infinite()
+//     }
+//     infinite()
+// }
+
+//Intermediate Questions on Recursion
+// Q1) Fibonacci Series upto a number
 {
-    function infinite() {
-        return infinite()
+    function fibonacci(n) {
+        if (n === 0) return 0;
+        if (n === 1) return 1;
+        return fibonacci(n - 1) + fibonacci(n - 2);
     }
-    infinite()
+    console.log(fibonacci(7));
 }
