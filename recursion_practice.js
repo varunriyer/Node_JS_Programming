@@ -158,3 +158,18 @@
     }
     traceFactorial(3);
 }
+
+//Tail- Recursion 
+
+// Sum of First n numbers
+{
+    function tailSum(n, acc = 0) {
+        if (n < 0) throw new Error("Natural numbers cannot be negative")
+        if (n === 0) {
+            console.log(acc);
+            return;
+        }
+        tailSum(n - 1, n + acc);
+    }
+    tailSum(5);
+}
