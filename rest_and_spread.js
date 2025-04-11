@@ -32,3 +32,18 @@
     }
     console.log(mergeArrays([1, 2, 3], [4, 5, 6]));
 }
+{
+    // Take any number of numeric arguments and return their sum 
+    function sumAll(...nums) {
+        let sum = 0;
+        for (let num of nums) {
+            sum += num;
+        }
+        return sum;
+    }
+    console.log(sumAll(5, 10, 15))
+}
+{
+    const sumAll = (...nums) => nums.reduce((a, b) => a + b, 0); //writing in short code
+    console.log(sumAll(5, 10, 15));
+}
