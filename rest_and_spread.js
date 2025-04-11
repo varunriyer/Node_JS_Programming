@@ -63,3 +63,13 @@
     const userSettings = { notification: false, fontsize: 'Medium' };
     console.log({ ...defaults, ...userSettings });
 }
+{
+    const user = {
+        name: "Varun",
+        age: 22,
+        country: "India",
+        isAdmin: true
+    };
+    const { name, ...rest } = user;
+    console.log(name, rest);
+}
