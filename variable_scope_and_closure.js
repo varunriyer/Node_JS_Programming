@@ -35,34 +35,64 @@ function testScopes() {
 testScopes();
 
 //Closures
-function outer() {
-    let name = "Varun";
+{
+    function outer() {
+        let name = "Varun";
 
-    function inner() {
-        console.log("Hello" + " " + name);
+        function inner() {
+            console.log("Hello" + " " + name);
+        }
+        return inner;
     }
-    return inner;
+    const greetVarun = outer();
+    greetVarun();
 }
-const greetVarun = outer();
-greetVarun();
+{
+    function counter() {
+        let count = 0;
 
-function counter() {
-    let count = 0;
+        return function () {
+            count++;
+            console.log(count);
+        };
+    }
 
-    return function () {
-        count++;
-        console.log(count);
-    };
+    const increment = counter();
+    increment(); // 1
+    increment(); // 2
+    increment(); // 3
+
+    const A = counter();
+    A(); //
+    A();
+
+    const B = counter();
+    B();
+
 }
+{
+    console.log("Final Question Output:")
+    function counter(start = 0) {
+        let count = start;
+        return {
+            increment: function () {
+                count++;
+                console.log(count);
+            },
+            decrement: function () {
+                count--;
+                console.log(count);
+            }
+        };
+    }
 
-const increment = counter();
-increment(); // 1
-increment(); // 2
-increment(); // 3
+    const C = counter(5);
+    C.increment();  // ?
+    C.increment();  // ?
+    C.decrement();  // ?
 
-const A = counter();
-A();
-A();
+    const D = counter(100);
+    D.decrement();  // ?
+    C.increment();  // ?
 
-const B = counter();
-B();
+}
