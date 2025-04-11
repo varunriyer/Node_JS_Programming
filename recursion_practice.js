@@ -17,4 +17,6 @@
         return n * factorial(n - 1);
     }
     console.log(factorial(5));
+    console.log(factorial(999)); //This gives infinity
+    // console.log(factorial(9654)); --> Numbers above this give error
 }
