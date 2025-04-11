@@ -49,3 +49,19 @@
     }
     console.log(reverseStr("abc"));
 }
+
+//How Recursion uses the call stack in JS 
+// Implementation 
+{
+    function factorial(n) {
+        console.log("Entering factorial:");
+        if (n === 0) {
+            console.log("Base Case Reached");
+            return 1;
+        }
+        let result = n * factorial(n - 1);
+        console.log(`Returning ${result} for n = ${n}`);
+        return result;
+    }
+    factorial(5);
+}
