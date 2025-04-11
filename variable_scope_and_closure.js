@@ -96,3 +96,29 @@ testScopes();
     C.increment();  // ?
 
 }
+{
+    function sharedCounter() {
+        let count = 0;
+
+        function increment() {
+            count++;
+            console.log("Increment:", count);
+        }
+
+        function decrement() {
+            count--;
+            console.log("Decrement:", count);
+        }
+
+        return { increment, decrement };
+    }
+
+    const counterA = sharedCounter();
+    const counterB = counterA;
+
+    counterA.increment();  // 1
+    counterB.increment();  // 2
+    counterA.decrement();  // 1
+    counterB.decrement();  // 0
+
+}
