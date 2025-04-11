@@ -92,3 +92,14 @@
     clone.hobbies.push("music");
     console.log(user.hobbies); //returns [ 'coding', 'basketball', 'music' ] 
 }
+{
+    //For deep copy, we have to use other tools like given below:
+    const user = {
+        name: "Varun",
+        hobbies: ["coding", "basketball"]
+    };
+    const deepClone = JSON.parse(JSON.stringify(user));
+    deepClone.hobbies.push("music");
+    console.log(user.hobbies); //returns [ 'coding', 'basketball' ]
+    console.log(deepClone.hobbies); //reterns [ 'coding', 'basketball', 'music' ]
+}
