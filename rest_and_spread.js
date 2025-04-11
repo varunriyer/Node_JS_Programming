@@ -73,3 +73,12 @@
     const { name, ...rest } = user;
     console.log(name, rest);
 }
+{
+    const user = {
+        name: "Varun",
+        email: "varun@example.com",
+        password: "supersecret123"
+    };
+    const { password, ...safeUser } = user;
+    console.log(safeUser);
+}
