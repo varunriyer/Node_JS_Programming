@@ -121,3 +121,16 @@
     const { theme, ...rem_attributes } = settings
     console.log(rem_attributes);
 }
+{
+    const defaultSettings = {
+        theme: "light",
+        notifications: true,
+        autoSave: false
+    };
+
+    const userSettings = {
+        theme: "dark",
+        autoSave: true
+    };
+    console.log({ ...defaultSettings, ...userSettings });
+}
