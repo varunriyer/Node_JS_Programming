@@ -47,3 +47,8 @@
     const sumAll = (...nums) => nums.reduce((a, b) => a + b, 0); //writing in short code
     console.log(sumAll(5, 10, 15));
 }
+{
+    const arr = [10, 20, 30, 40, 50];
+    const [a, b, ...rest] = arr;
+    console.log(a, b, rest);
+}
