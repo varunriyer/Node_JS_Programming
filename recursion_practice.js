@@ -102,3 +102,21 @@
     }
     printReverse(5);
 }
+
+// Simulate a Stack using an Array 
+{
+    console.log("Stack using Array:");
+    let stack = [];
+    function pushtostack(n) {
+        if (n <= 0) return;
+        stack.push(n);
+        pushtostack(n - 1);
+    }
+    function popStack() {
+        if (stack.length === 0) return;
+        console.log(stack.pop());
+        popStack();
+    }
+    pushtostack(5);
+    popStack();
+}
