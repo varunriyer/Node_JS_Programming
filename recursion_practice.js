@@ -21,11 +21,22 @@
     // console.log(factorial(9654)); --> Numbers above this give error
 }
 //Practice Questions 
-//Q1) Sum of natiral numbers upto n
+// Q1) Sum of natiral numbers upto n
 {
     function sum(n) {
-        if (n == 0) return 0;
+        if (n < 0) throw new Error("Input must be a non-negative integer");
+        if (n === 0) return 0;
         return n + sum(n - 1);
     }
     console.log(sum(5));
+}
+
+// Q2) Print each character of a string recursively
+{
+    function print_str(str) {
+        if (str === "") return;
+        console.log(str[0]);
+        print_str(str.slice(1));
+    }
+    print_str("Hello");
 }
