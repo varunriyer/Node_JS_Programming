@@ -184,10 +184,21 @@ testScopes();
         return function (number) {
             return number * factor;
         };
-    }
+    };
     const double = createMultiplier(2);
     const triple = createMultiplier(3);
 
     console.log(double(5));
     console.log(triple(3));
+}
+{
+    //Greeting Generator using Factory Functions
+
+    function greetingGenerator(greeting) {
+        return function (name) {
+            return (`${greeting} ${name}`);
+        };
+    };
+    const sayHello = greetingGenerator("Hello");
+    console.log(sayHello("Varun"));
 }
