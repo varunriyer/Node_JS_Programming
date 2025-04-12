@@ -8,3 +8,9 @@
 (() => {
     console.log("This also a way to depict an IIFE");
 })();
+
+//IIFE Basic Example 
+
+(() => {
+    console.log("Hello Varun");
+})();
