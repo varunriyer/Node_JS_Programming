@@ -59,3 +59,33 @@
     console.log(secretHolder.setSecret("Found it!"));
     console.log(secretHolder.getSecret());
 }
+
+//IIFE example that acts like a simple bank account 
+{
+    const account = (function (initialBalance) {
+        let balance = initialBalance;
+        return {
+            deposit: function (amount) {
+                balance += amount;
+                return balance;
+            },
+            withdraw: function (amount) {
+                if (amount <= balance) {
+                    balance -= amount;
+                    return balance;
+                }
+                else {
+                    return ("Insufficient funds");
+                }
+            },
+            checkBalance: function () {
+                return balance;
+            }
+        };
+    })(1000);
+
+    console.log(account.deposit(500));
+    console.log(account.withdraw(200));
+    console.log(account.checkBalance());
+    console.log(account.balance); //undefined 
+}
