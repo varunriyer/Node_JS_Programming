@@ -177,3 +177,17 @@ testScopes();
     console.log(mySecret.setSecret("Actually scared"));
     console.log(mySecret.secret);
 }
+
+//Factory Functions 
+{
+    function createMultiplier(factor) {
+        return function (number) {
+            return number * factor;
+        };
+    }
+    const double = createMultiplier(2);
+    const triple = createMultiplier(3);
+
+    console.log(double(5));
+    console.log(triple(3));
+}
