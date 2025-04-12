@@ -123,3 +123,36 @@ testScopes();
 
 }
 // Continuing Variable scope and closure 
+
+{
+    //Using Closures to Encapsulate Data
+    function createAccount(initialBalance) {
+        let balance = initialBalance;
+
+        return {
+            getBalance: function () {
+                return balance;
+            },
+            deposit: function (amount) {
+                balance += amount;
+                return balance;
+            },
+            withdraw: function (amount) {
+                if (amount <= balance) {
+                    balance -= amount
+                    return balance;
+                }
+                else {
+                    console.log("Insufficient funds");
+                }
+            }
+        };
+    };
+    const myAccount = createAccount(1000);
+    console.log(myAccount.getBalance());
+    console.log(myAccount.deposit(100));
+    console.log(myAccount.withdraw(1500));
+    console.log(myAccount.withdraw(150));
+    console.log(myAccount.balance); // This will return undefined 
+
+}
