@@ -34,3 +34,8 @@ setTimeout(function () {
 }, 2000); //time in milliseconds
 
 
+//Practice to perfect the syntax 
+setTimeout(function () {
+    console.log("Hi Varun, this is a delayed message")
+}, 3000);
+
