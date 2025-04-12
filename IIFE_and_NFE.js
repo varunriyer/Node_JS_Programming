@@ -89,12 +89,22 @@
     console.log(account.checkBalance());
     console.log(account.balance); //undefined 
 }
-//NFE - Named Function Expression 
+//NFE - Named Function Expression --> useful for recursion in anonymous functions, better debugging, maintaining self-reference 
 {
-    //Basic Example
+    //Basic NFE Syntax
     const myFunction = function functionName(params) {
         return params;
     }
     console.log(myFunction("test"));
+}
+
+//Basic NFE Example
+{
+    const factorial = function fact(n) {
+        if (n <= 1) return 1;
+        return n * fact(n - 1);
+    };
+    console.log(factorial(5));
+    // console.log(fact) --> gives an error as it is used for self-reference and is not accessible outside
 
 }
