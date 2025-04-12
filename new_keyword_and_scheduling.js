@@ -29,36 +29,47 @@
 //Scheduling
 
 //Set Timeout
-setTimeout(function () {
-    console.log("Hello after 2 seconds")
-}, 2000); //time in milliseconds
+// setTimeout(function () {
+//     console.log("Hello after 2 seconds")
+// }, 2000); //time in milliseconds
 
 
-//Practice to perfect the syntax 
-setTimeout(function () {
-    console.log("Hi Varun, this is a delayed message")
-}, 3000);
+// //Practice to perfect the syntax 
+// setTimeout(function () {
+//     console.log("Hi Varun, this is a delayed message")
+// }, 3000);
 
-//Basic Set Interval Example 
+// //Basic Set Interval Example 
 
-setInterval(function () {
-    console.log("Repeats every 2 seconds,wow!");
-}, 2000);
+// setInterval(function () {
+//     console.log("Repeats every 2 seconds,wow!");
+// }, 2000);
 
-//Additional example to perfect the usage
+// //Additional example to perfect the usage
 
-setInterval(function () {
-    console.log("Remainder: Take a breath!");
-}, 4000)
+// setInterval(function () {
+//     console.log("Remainder: Take a breath!");
+// }, 4000)
 
-//Storing the interval ID for stopping it later 
+// //Storing the interval ID for stopping it later 
+// {
+//     const reminder = setInterval(function () {
+//         console.log("This will end soon");
+//     }, 4000);
+
+//     setTimeout(function () {
+//         clearInterval(reminder);
+//         console.log("Boom that ended soon")
+//     }, 12000);
+// }
 {
-    const reminder = setInterval(function () {
-        console.log("This will end soon");
-    }, 4000);
+    let n = 1;
+    const countdown = setInterval(function () {
+        console.log(n++);
+    }, 1000);
 
     setTimeout(function () {
-        clearInterval(reminder);
-        console.log("Boom that ended soon")
-    }, 12000);
+        clearInterval(countdown);
+        console.log("5 secs up!");
+    }, 6001);
 }
