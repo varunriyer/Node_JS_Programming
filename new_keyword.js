@@ -18,4 +18,10 @@
     const car1 = new Car("Tesla", 2023);
     console.log(car1.brand);
     console.log(car1.year);
+
+    //Add Methods via Prototype
+    Car.prototype.getDetails = function () {
+        return `${this.brand} was manufactured in ${this.year} `;
+    };
+    console.log(car1.getDetails());
 }
