@@ -1,4 +1,4 @@
-//Code inside an IIFE runs immediately 
+//Code inside an IIFE runs immediately (Immmediately Invoked Function Expression)
 
 (function () {
     console.log("This runs immediately");
@@ -88,4 +88,13 @@
     console.log(account.withdraw(200));
     console.log(account.checkBalance());
     console.log(account.balance); //undefined 
+}
+//NFE - Named Function Expression 
+{
+    //Basic Example
+    const myFunction = function functionName(params) {
+        return params;
+    }
+    console.log(myFunction("test"));
+
 }
