@@ -202,3 +202,16 @@ testScopes();
     const sayHello = greetingGenerator("Hello");
     console.log(sayHello("Varun"));
 }
+{
+    // Power Factory using Factory Functions 
+    function powerFactory(exponent) {
+        return function (base) {
+            return base ** exponent;
+        };
+    };
+    const square = powerFactory(2);
+    console.log(square(5));
+
+    const cube = powerFactory(3);
+    console.log(cube(2));
+}
