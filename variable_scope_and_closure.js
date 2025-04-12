@@ -205,13 +205,18 @@ testScopes();
 {
     // Power Factory using Factory Functions 
     function powerFactory(exponent) {
+        let count = 0;
         return function (base) {
-            return base ** exponent;
+            count++;
+            return (`${base ** exponent}, count = ${count}`);
         };
     };
     const square = powerFactory(2);
     console.log(square(5));
+    console.log(square(3));
+    console.log(square(8));
 
     const cube = powerFactory(3);
     console.log(cube(2));
+    console.log(cube(4));
 }
