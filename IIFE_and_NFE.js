@@ -29,3 +29,15 @@
     console.log(counter());
     console.log(counter());
 }
+{
+    //IIFE to store secret
+    const secretHolder = (function (initialSecret) {
+        let secret = initialSecret;
+        return function () {
+            return secret;
+        };
+    })("hidden");
+
+    console.log(secretHolder());
+
+}
