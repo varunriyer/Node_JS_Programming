@@ -121,3 +121,11 @@
     countdown = null; //Even though countdown is null, the internal name count still works 
     newCountdown(10);
 }
+{
+    // One more sample problem to master NFE
+    const factorial = function fact(n) {
+        if (n == 0) return 1
+        return n * fact(n - 1);
+    };
+    console.log(factorial(5));
+}
