@@ -110,10 +110,14 @@
 
 // NFE that prints countdown from n to 1 using recursion 
 {
-    const countdown = function count(n) {
+    let countdown = function count(n) {
         if (n <= 0) return
         console.log(n);
         return count(n - 1);
     };
     (countdown(5));
+
+    const newCountdown = countdown;
+    countdown = null; //Even though countdown is null, the internal name count still works 
+    newCountdown(10);
 }
