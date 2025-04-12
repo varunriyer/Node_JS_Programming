@@ -156,3 +156,24 @@ testScopes();
     console.log(myAccount.balance); // This will return undefined 
 
 }
+
+//Practice Question
+{
+    function secretHolder(initialSecret) {
+        let secret = initialSecret;
+        return {
+            getSecret: function () {
+                return secret;
+            },
+            setSecret: function (newSecret) {
+                secret = newSecret;
+                return secret;
+            }
+
+        };
+    };
+    const mySecret = secretHolder("Scary");
+    console.log(mySecret.getSecret());
+    console.log(mySecret.setSecret("Actually scared"));
+    console.log(mySecret.secret);
+}
