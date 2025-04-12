@@ -50,3 +50,15 @@ setInterval(function () {
 setInterval(function () {
     console.log("Remainder: Take a breath!");
 }, 4000)
+
+//Storing the interval ID for stopping it later 
+{
+    const reminder = setInterval(function () {
+        console.log("This will end soon");
+    }, 4000);
+
+    setTimeout(function () {
+        clearInterval(reminder);
+        console.log("Boom that ended soon")
+    }, 12000);
+}
