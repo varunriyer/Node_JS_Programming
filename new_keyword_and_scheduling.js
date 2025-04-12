@@ -25,3 +25,12 @@
     };
     console.log(car1.getDetails());
 }
+
+//Scheduling
+
+//Set Timeout
+setTimeout(function () {
+    console.log("Hello after 2 seconds")
+}, 2000); //time in milliseconds
+
+
