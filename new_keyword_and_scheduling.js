@@ -62,14 +62,27 @@
 //         console.log("Boom that ended soon")
 //     }, 12000);
 // }
+// {
+//     let n = 1;
+//     const countdown = setInterval(function () {
+//         console.log(n++);
+//     }, 1000);
+
+//     setTimeout(function () {
+//         clearInterval(countdown);
+//         console.log("5 secs up!");
+//     }, 6001);
+// }
 {
+    //Cleaned up code of the above
     let n = 1;
     const countdown = setInterval(function () {
-        console.log(n++);
+        console.log(n);
+        if (n === 5) {
+            clearInterval(countdown);
+            console.log("5 secs up!");
+        }
+        n++;
     }, 1000);
 
-    setTimeout(function () {
-        clearInterval(countdown);
-        console.log("5 secs up!");
-    }, 6001);
 }
