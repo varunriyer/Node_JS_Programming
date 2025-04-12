@@ -106,5 +106,14 @@
     };
     console.log(factorial(5));
     // console.log(fact) --> gives an error as it is used for self-reference and is not accessible outside
+}
 
+// NFE that prints countdown from n to 1 using recursion 
+{
+    const countdown = function count(n) {
+        if (n <= 0) return
+        console.log(n);
+        return count(n - 1);
+    };
+    (countdown(5));
 }
