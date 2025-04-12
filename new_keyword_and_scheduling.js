@@ -44,3 +44,9 @@ setTimeout(function () {
 setInterval(function () {
     console.log("Repeats every 2 seconds,wow!");
 }, 2000);
+
+//Additional example to perfect the usage
+
+setInterval(function () {
+    console.log("Remainder: Take a breath!");
+}, 4000)
