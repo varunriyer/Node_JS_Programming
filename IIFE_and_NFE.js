@@ -39,5 +39,23 @@
     })("hidden");
 
     console.log(secretHolder());
+}
+{
+    //Updated code to set and get secret
+    const secretHolder = (function (initialSecret) {
+        let secret = initialSecret;
+        return {
+            getSecret: function () {
+                return secret;
+            },
+            setSecret: function (newSecret) {
+                secret = newSecret;
+                return secret;
+            }
+        };
+    })("hidden");
 
+    console.log(secretHolder.getSecret());
+    console.log(secretHolder.setSecret("Found it!"));
+    console.log(secretHolder.getSecret());
 }
