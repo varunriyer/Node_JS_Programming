@@ -39,3 +39,8 @@ setTimeout(function () {
     console.log("Hi Varun, this is a delayed message")
 }, 3000);
 
+//Basic Set Interval Example 
+
+setInterval(function () {
+    console.log("Repeats every 2 seconds,wow!");
+}, 2000);
