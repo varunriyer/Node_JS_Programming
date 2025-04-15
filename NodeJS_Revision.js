@@ -33,3 +33,15 @@ console.log("End"); //2
     const myCar = new Car("Tesla");
     console.log(myCar.start());
 }
+
+//Checking truthy and falsy values 
+{
+    function checkTruthy(input) {
+        return input ? "Yes" : "No";
+    }
+    console.log(checkTruthy(0));
+    console.log(checkTruthy('hello'));
+    console.log(checkTruthy(''));
+    console.log(checkTruthy(null));
+    console.log(checkTruthy(5));
+}
