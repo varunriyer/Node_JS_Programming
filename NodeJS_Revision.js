@@ -13,8 +13,23 @@
 
 console.log("Start"); //1
 
-setTimeout(() => console.log("Timeout"), 0); //4
+// setTimeout(() => console.log("Timeout"), 0); //4   --> commenting it out so that it's easier to look at future outputs
 
-Promise.resolve().then(() => console.log("Promise")); //3
+// Promise.resolve().then(() => console.log("Promise")); //3
 
 console.log("End"); //2
+
+//Objects Practice 
+{
+    class Car {
+        constructor(brand) {
+            this.brand = brand;
+        }
+        start() {
+            return `${this.brand} is starting`;
+        }
+    };
+
+    const myCar = new Car("Tesla");
+    console.log(myCar.start());
+}
