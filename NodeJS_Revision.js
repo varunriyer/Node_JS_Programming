@@ -45,3 +45,16 @@ console.log("End"); //2
     console.log(checkTruthy(null));
     console.log(checkTruthy(5));
 }
+
+//Using Logical & Nullish Operators to validate User or Guest 
+{
+    function greetUser(username) {
+        return `Hello ${username ?? 'Guest'}`;
+    }
+    console.log(greetUser("Varun"));
+    console.log(greetUser(null));
+    console.log(greetUser(''));
+    console.log(greetUser(false));
+    console.log(greetUser(0));
+    console.log(greetUser(undefined));
+}
