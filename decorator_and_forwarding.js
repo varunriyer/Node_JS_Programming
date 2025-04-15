@@ -15,3 +15,19 @@
         }
     }
 }
+{
+    function logDecorator(func) {
+        return function (...args) {
+            console.log(`Calling with arguments: ${args}`);
+            const result = func.apply(this, args);
+            console.log(`Result: ${result}`);
+            return result;
+        };
+    }
+    function add(a, b) {
+        return a + b;
+    }
+
+    const decoratedAdd = logDecorator(add);
+    decoratedAdd(2, 3);
+}
