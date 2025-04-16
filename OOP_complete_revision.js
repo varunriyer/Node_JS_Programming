@@ -22,3 +22,21 @@
     };
     car.displayInfo();
 }
+// Q2) Write a function that accepts an object and a key, and returns the value of that key if it exists, otherwise returns 'Key not found'.
+{
+    function checkExist(obj, search_key) {
+        const flag = 1;
+        for (const [key] of Object.keys(obj)) {
+            if (search_key == key) {
+                flag = 0;
+                return Object.values(key);
+            }
+        }
+        if (flag === 1) return "Key not found";
+    }
+    const obj = {
+        text: "Hello World",
+        index: 7
+    };
+    console.log(checkExist(obj, "text"));
+}
