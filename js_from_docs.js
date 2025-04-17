@@ -57,4 +57,6 @@ var x = 3;
     console.log("Test \u00A9") // TO print UNICODE
 }
 
-//Falsy Values - 0, null, false, undefined, ""(empty string),NaN 
+//Falsy Values - 0, null, false, undefined, ""(empty string),NaN
+//All other values are evaluated as true
+
