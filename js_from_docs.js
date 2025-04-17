@@ -41,3 +41,8 @@ var x = 3;
     console.log(car[7], car["!"]);
 
 }
+
+//Special Characters in JS Strings
+{
+    console.log("one line \nanother line");
+}
