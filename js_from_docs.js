@@ -48,4 +48,5 @@ var x = 3;
     console.log("Hello \0 World");
     console.log("Hello\bWorld"); // \b is used to backspace in strings
     console.log("Hello \fWorld"); // \f actually used for new page 
+    console.log("hello wait hmm \rWorld"); // \r implementation
 }
