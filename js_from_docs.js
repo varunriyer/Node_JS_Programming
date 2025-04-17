@@ -89,6 +89,11 @@ var x = 3;
 }
 // Try..throw..catch  block
 {
+    function logMyErrors(error) {
+        console.error("An error occurred:");
+        console.error("Error Name: " + error);
+    }
+
     function getMonthName(month) {
         month--; // Adjusting month number to array index as array index is from 0 to 11
 
@@ -108,6 +113,7 @@ var x = 3;
     } catch (e) {
         monthName = "unknown";
         // console.log(e); --> Printing this will give the error, should create a function which logs errors and then displays it 
+        logMyErrors(e);
     }
     console.log(monthName);
 }
