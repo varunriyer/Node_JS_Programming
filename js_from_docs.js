@@ -46,4 +46,5 @@ var x = 3;
 {
     console.log("one line \nanother line");
     console.log("Hello \0 World");
+    console.log("Hello\bWorld"); // \b is used to backspace in strings
 }
