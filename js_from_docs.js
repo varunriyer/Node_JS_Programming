@@ -87,3 +87,27 @@ var x = 3;
     console.log("Is there anything else you'd like?");
 
 }
+// Try..throw..catch  block
+{
+    function getMonthName(month) {
+        month--; // Adjusting month number to array index as array index is from 0 to 11
+
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        if (months[month]) {
+            return months[month];
+        }
+        else {
+            throw new Error("Invalid Month Number");
+        }
+    };
+    let myMonth = 17;
+
+    try {
+        monthName = getMonthName(myMonth);
+    } catch (e) {
+        monthName = "unknown";
+        // console.log(e); --> Printing this will give the error, should create a function which logs errors and then displays it 
+    }
+    console.log(monthName);
+}
