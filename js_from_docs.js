@@ -52,4 +52,5 @@ var x = 3;
     console.log("Hello\tWorld"); // \t for tab
     console.log("Hello\vWorld"); // \v for vertical tab
     console.log("Hello\\World"); // to include backslash character
+    console.log("Test \123"); // To print using octal digits 
 }
