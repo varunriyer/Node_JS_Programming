@@ -34,7 +34,10 @@ var x = 3;
 }
 
 {
-    const car = { manyCars: { a: "Nano", b: "Jeep" }, 7: "Fav car number", };
-    console.log(car.manyCars.b);
-    console.log(car[7]);
+    const car = {
+        manyCars: { a: "Nano", b: "Jeep" }, 7: "Fav car number", "!": "dayum"
+    }; //Property names that are not valid identidfiers cannot be accessed by . operator 
+    console.log(car.manyCars.b); // They should be marked in " " and be accessed with [" "]
+    console.log(car[7], car["!"]);
+
 }
