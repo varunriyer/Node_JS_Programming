@@ -45,4 +45,5 @@ var x = 3;
 //Special Characters in JS Strings
 {
     console.log("one line \nanother line");
+    console.log("Hello \0 World");
 }
