@@ -51,4 +51,5 @@ var x = 3;
     console.log("hello wait hmm \rWorld"); // \r implementation
     console.log("Hello\tWorld"); // \t for tab
     console.log("Hello\vWorld"); // \v for vertical tab
+    console.log("Hello\\World"); // to include backslash character
 }
