@@ -32,3 +32,9 @@ var x = 3;
     console.log(car2.getCar);
     console.log(car.special);
 }
+
+{
+    const car = { manyCars: { a: "Nano", b: "Jeep" }, 7: "Fav car number", };
+    console.log(car.manyCars.b);
+    console.log(car[7]);
+}
