@@ -86,3 +86,12 @@ console.log(Array.prototype.concat.call(1, 2, 3)); // --> [ [Number: 1], 2, 3 ]
         console.log(value);
     }
 }
+
+// Using Array.every()
+{
+    const isBelowThreshold = (currentValue) => currentValue < 40;
+
+    const arr = [1, 30, 39, 29, 10, 13];
+
+    console.log(arr.every(isBelowThreshold));
+}
