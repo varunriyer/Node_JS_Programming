@@ -52,3 +52,16 @@
 
     console.log([0].concat(obj1, obj2));
 }
+
+// Using concat() on sparse arrays 
+{
+    const arr1 = [1, , 3];
+    const arr2 = [1, 2, ,];
+    console.log(arr1.concat(arr2)); // --> [ 1, <1 empty item>, 3, 1, 2, <1 empty item> ]
+}
+
+//Calling concat() on non-array objects 
+console.log(Array.prototype.concat.call({}, 1, 2, 3)); // --> [ {}, 1, 2, 3 ]
+console.log(Array.prototype.concat.call(1, 2, 3)); // --> [ [Number: 1], 2, 3 ]
+
+
