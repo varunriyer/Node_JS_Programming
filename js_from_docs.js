@@ -221,3 +221,14 @@ var x = 3;
 // eval function - but not advised to use the same directly 
 console.log(eval("2+2") === eval("4"));
 console.log("2+2" === "4");
+
+//Function hoisting in JS - can call a function first and declare it later
+{
+    console.log(myFunc());
+    function myFunc() {
+        return `Do something`;
+    }
+    const x = "Break";
+    console.log(x);
+}
+
