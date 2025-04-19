@@ -198,3 +198,24 @@ var x = 3;
     }, numbers);
     console.log(cubedNumbers);
 }
+
+//Defining a function based on a condition 
+{
+    let myFunc;
+    let num = 0;
+    let obj = {
+        type: "sedan",
+        color: "red"
+    }
+    if (num == 0) {
+        myFunc = function (theObject) {
+            theObject.make = "Toyota";
+        };
+        myFunc(obj);
+        console.log(obj);
+    }
+    else {
+        console.log("Num value invalid");
+    }
+
+}
