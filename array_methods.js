@@ -25,5 +25,9 @@
 {
     const arr1 = [1, 2, 3];
     const arr2 = [3, 4, 5];
+    const arr3 = ["text"];
     console.log(arr1.concat(arr2));
+    console.log(arr1.concat(arr2, arr3));
+
+    console.log(arr1.concat([10, [11, 12]])); //Can also concatenate values to an array using.concat()
 }
