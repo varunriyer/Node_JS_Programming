@@ -168,3 +168,11 @@ var x = 3;
     }
     console.log(square(5));
 }
+
+//But you can also name the function 
+{
+    const factorial = function fact(n) {
+        return n < 2 ? 1 : n * fact(n - 1);
+    }
+    console.log(factorial(5));
+}
