@@ -217,5 +217,7 @@ var x = 3;
     else {
         console.log("Num value invalid");
     }
-
 }
+// eval function - but not advised to use the same directly 
+console.log(eval("2+2") === eval("4"));
+console.log("2+2" === "4");
