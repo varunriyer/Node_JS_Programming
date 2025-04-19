@@ -134,3 +134,15 @@ var x = 3;
         console.log(key, value);
     }
 }
+
+//Passing array as parameter 
+{
+    function myFunc(arr) {
+        arr[0] = 30;
+    }
+
+    const arr = [45, 12, 7];
+    console.log(arr[0]);
+    myFunc(arr);
+    console.log(arr[0]);
+}
