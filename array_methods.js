@@ -65,3 +65,15 @@ console.log(Array.prototype.concat.call({}, 1, 2, 3)); // --> [ {}, 1, 2, 3 ]
 console.log(Array.prototype.concat.call(1, 2, 3)); // --> [ [Number: 1], 2, 3 ]
 
 
+// Array.entries()
+{
+    const arr = ["a", "b", "c"];
+    for (let [key, value] of arr.entries()) {
+        console.log(key, value);
+    }
+    const iterator = arr.entries()
+    console.log(iterator.next().value);
+    console.log(iterator.next().value);
+    console.log(iterator.next().value);
+
+}
