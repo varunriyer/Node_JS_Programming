@@ -94,4 +94,13 @@ console.log(Array.prototype.concat.call(1, 2, 3)); // --> [ [Number: 1], 2, 3 ]
     const arr = [1, 30, 39, 29, 10, 13];
 
     console.log(arr.every(isBelowThreshold));
+
+    // Adding another example 
+    function ageVerification(age) {
+        return age >= 18;
+    }
+
+    const ages = [21, 34, 19, 92];
+    console.log(ages.every(ageVerification));
 }
+
