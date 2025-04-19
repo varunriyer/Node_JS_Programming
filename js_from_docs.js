@@ -176,3 +176,25 @@ var x = 3;
     }
     console.log(factorial(5));
 }
+
+// Using Function Expression when passing a function as an argument to another function 
+{
+    // function map(f, a) {   ---> This code can be used if you do not want to modify the original array and create a new array 
+    //     const result = new Array(a.length);
+    //     for (let i = 0; i < a.length; i++) {
+    //         result[i] = f(a[i]);
+    //     }
+    //     return result;
+    // }
+    function map(f, a) {
+        for (let i = 0; i < a.length; i++) {
+            a[i] = f(a[i]);
+        }
+        return a;
+    }
+    const numbers = [0, 1, 2, 5, 10];
+    const cubedNumbers = map(function (x) {
+        return x * x * x;
+    }, numbers);
+    console.log(cubedNumbers);
+}
