@@ -104,3 +104,11 @@ console.log(Array.prototype.concat.call(1, 2, 3)); // --> [ [Number: 1], 2, 3 ]
     console.log(ages.every(ageVerification));
 }
 
+// Using .every() to check if an array is a subset of another 
+{
+    function isSubset(arr1, arr2) {
+        return arr2.every((element) => arr1.includes(element));
+    }
+    console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 6, 7])); //true
+    console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [0, 4, 2])); //false
+}
