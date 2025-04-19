@@ -160,3 +160,11 @@ var x = 3;
 
     console.log(addSquares(num1, num2));
 }
+
+// Using Function Expression where a function can be anonymous and it doesn't have to have a name
+{
+    const square = function (x) {
+        return x * x;
+    }
+    console.log(square(5));
+}
