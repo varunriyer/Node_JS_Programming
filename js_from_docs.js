@@ -146,3 +146,17 @@ var x = 3;
     myFunc(arr);
     console.log(arr[0]);
 }
+
+// Function declarations & expressions can be nested 
+{
+    function addSquares(a, b) {
+        function square(x) {
+            return x * x;
+        }
+        return square(a) + square(b);
+    }
+    const num1 = 3;
+    const num2 = 4;
+
+    console.log(addSquares(num1, num2));
+}
