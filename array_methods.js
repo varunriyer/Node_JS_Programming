@@ -76,4 +76,13 @@ console.log(Array.prototype.concat.call(1, 2, 3)); // --> [ [Number: 1], 2, 3 ]
     console.log(iterator.next().value);
     console.log(iterator.next().value);
 
+    console.log("Testing array.keys()");
+    for (let key of arr.keys()) {
+        console.log(key);
+    }
+
+    console.log("Testing array.values()");
+    for (let value of arr.values()) {
+        console.log(value);
+    }
 }
