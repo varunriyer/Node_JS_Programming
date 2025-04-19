@@ -245,4 +245,14 @@ function loop(x) {
 
 loop(0);
 
+//Demonstration to show that recursion itself uses the function stack 
+function foo(i) {
+    if (i < 0) {
+        return;
+    }
+    console.log(`Begin: ${i}`);
+    foo(i - 1);
+    console.log(`End: ${i}`);
+};
+foo(3);
 
