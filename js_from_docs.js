@@ -121,10 +121,16 @@ var x = 3;
 //For of & For in loops 
 {
     const arr = [3, 5, 7];
+    arr.foo = "hello";
     for (const i in arr) {
         console.log(i);
     }
     for (const i of arr) {
         console.log(i);
+    }
+
+    const obj = { a: 3, b: 5 };
+    for (const [key, value] of Object.entries(obj)) {
+        console.log(key, value);
     }
 }
