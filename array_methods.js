@@ -30,4 +30,16 @@
     console.log(arr1.concat(arr2, arr3));
 
     console.log(arr1.concat([10, [11, 12]])); //Can also concatenate values to an array using.concat()
+
+    // Concatenating Nested Arrays 
+
+    const arr4 = [[1]];
+    const arr5 = [2, [3]];
+
+    const arr6 = arr4.concat(arr5);
+    console.log(arr6);
+
+    arr4[0].push(4);
+
+    console.log(arr6);
 }
