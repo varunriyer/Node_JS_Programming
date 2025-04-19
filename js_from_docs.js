@@ -232,3 +232,17 @@ console.log("2+2" === "4");
     console.log(x);
 }
 
+// Recursion demonstration using functions
+
+function loop(x) {
+    if (x >= 10) {
+        return;
+    }
+
+    loop(x + 1);
+    console.log('count');
+};
+
+loop(0);
+
+
